@@ -1,0 +1,44 @@
+{
+    "layer": "top",
+    "position": "top",
+    "exclusive": true,
+    "modules-left": ["hyprland/workspaces"], 
+    "modules-right": ["battery", "pulseaudio", "clock"], 
+    "clock": {
+        "format": "{:%a, %d. %b at %I:%M %p} ",
+	"tooltip": false
+    },
+    "hyprland/workspaces": {
+	    "format": "{icon}",
+	    "persistent-workspaces": {
+		    "*": 5
+	    },
+	    "sort-by-number": true
+    },
+    "pulseaudio": {
+	    "format": "{icon} {volume}%",
+	    "format-muted": "{icon} 0%",
+	    "format-source": "{volume}% ",
+	    "format-source-muted": "",
+	    "format-icons": {
+		    "default": ["", "", ""]
+	    }
+    },
+    "battery": {
+        "interval":2,
+        "states": {
+            // "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon} {capacity}%",
+        "format-full": "{icon} {capacity}%",
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
+        "format-alt": "{icon} {time}",
+        // "format-good": "", // An empty format will hide the module
+        // "format-full": "",
+        "format-icons": ["", "", "", "", ""]
+  }
+}
+

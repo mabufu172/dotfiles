@@ -1,0 +1,70 @@
+/* make background invisible */
+window#waybar {
+	background: #14171b;
+}
+
+* {
+	font-family: "VCR OSD MONO", monospace;
+	font-weight: bold;
+}
+
+/* change each module */
+.modules-right, .modules-left {
+	background: rgba(0, 0, 0, 0); 
+	border-radius: 10px;
+	margin-top: 3px;
+}
+
+.modules-right {
+	/* top right bottom left */
+	margin-right: 10px;
+}
+
+/*
+.modules-center {
+	margin: 0 0 0 0;
+}
+*/
+
+.modules-left {
+	margin-left: 10px;
+}
+
+#workspaces button {
+	padding: 1px 5px;
+	background-color: transparent;
+}
+
+#battery, #clock, #pulseaudio {
+	padding: 5px 10px;
+	color: #ffffff;
+}
+
+#workspaces {
+	padding-left: 3px;
+	padding-right: 7px;
+}
+
+/* gives workspaces circles color indicators */
+#workspaces button {
+	color: #999999;
+}
+
+#workspaces button.empty {
+	color: #333333;
+}
+
+#workspaces button.active {
+	color: #ffffff;
+}
+
+#workspaces button:hover {
+        background: none;
+        box-shadow: none;
+	text-shadow: none;
+        border-color: transparent;
+        transition: all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
+	animation: gradient_f 20s ease-in infinite;
+        color: #ffffff;
+}
+

@@ -1,0 +1,59 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  "modules": [
+	  "break",
+	  "title",
+	  {
+		  "key": "os  {#keys}",
+		  "type": "os"
+	  },
+	  {
+		  "key": "krnl{#keys}",
+		  "type": "kernel"
+	  },
+	  {
+		  "key": "upt {#keys}",
+		  "type": "uptime"
+	  },
+	  {
+		  "key": "pkgs{#keys}",
+		  "type": "packages",
+		  "format": "{} (pacman)"
+	  },
+	  {
+		  "key": "wm  {#keys}",
+		  "type": "wm"
+	  },
+	  {
+		  "key": "cpu {#keys}",
+		  "type": "cpu"
+	  },
+	  {
+		  "key": "gpu {#keys}",
+		  "type": "gpu"
+	  }
+  ],
+  "logo": {
+	  "source": "arch_small",
+	  "height": 10,
+	  "color": {
+		  "1": "38;2;116;173;192",
+		  "2": "38;2;116;173;192"
+	  },
+	  "padding": {
+    		"top": 1,
+    		"left": 2,
+    		"bottom": 1,
+    		"right": 2
+	  }
+  },
+  "display": {
+	  "separator": " ",
+	  "color": {
+		  "title": "38;2;116;173;192",
+		  "keys": "38;2;116;173;192"
+	  }
+  }
+}
+
+

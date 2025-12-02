@@ -1,0 +1,70 @@
+@theme "/dev/null"
+
+* {
+	bg: #191918;
+	background-color: @bg;
+}
+
+configuration {
+	show-icons: false;
+	location: 0;
+	font: "VCR OSD MONO 11";	
+	display-drun: "Run:";
+}
+
+window {
+	border: 1px;
+	width: 35%;
+	transparency: "real";
+	border-color: #7ab0c2; //#c7edff; //#74adc0;
+}
+
+mainbox {
+	children: [inputbar, listview];
+}
+
+
+// ELEMENT
+// -----------------------------------
+
+element {
+	//border-radius: 10px;
+	padding: 4 12;
+	text-color: #EFE7DD;
+}
+
+element selected {
+	background-color: #74adc0;
+	text-color: #191918;
+}
+
+element-text {
+	background-color: inherit;
+	text-color: inherit;
+}
+
+listview {
+	columns: 2;
+	lines: 9;
+	padding: 8 0;
+	fixed-height: true;
+	fixed-columns: true;
+	fixed-lines: true;
+	border: 0 10 6 10;
+}
+
+// INPUT BAR 
+//------------------------------------------------
+// ENTRY TEXT
+entry {
+	text-color: #EFE7DD;
+	padding: 10 10 0 0;
+	margin: 0 -2 0 0;
+}
+
+prompt {
+	text-color: #6a9fb4;
+	padding: 10 6 0 10;
+	margin: 0 -2 0 0;
+}
+
